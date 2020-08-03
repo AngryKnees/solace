@@ -37,7 +37,7 @@ async function setup() {
     canvas,
     width: canvas.clientWidth,
     height: canvas.clientHeight,
-    pixelRatio: window.devicePixelRatio,
+    //pixelRatio: window.devicePixelRatio,
     vertexShader,
     fragmentShader
   });
