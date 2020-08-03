@@ -1,0 +1,49 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: #202426;
+}
+
+a, a:hover, a:focus, a:active {
+  color: inherit;
+}
+
+#audio-canvas {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+#audio-source {
+  flex-grow: 1;
+}
+
+#attribution {
+  margin: 1em 2em;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: whitesmoke;
+}
+
+#play-symbol {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#play-symbol.playing {
+  animation-name: fade-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.4s;
+  animation-duration: 0.6s;
+  animation-timing-function: cubic-bezier(0.64, 0, 0.78, 0);
+}
+
+@keyframes fade-out {
+  from { opacity: 100%; }
+  to { opacity: 0%; }
+}

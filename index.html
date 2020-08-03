@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solace</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <canvas id="audio-canvas">🙁</canvas>
+
+  <img id="play-symbol"
+    src="pause_circle_outline.svg"
+    class="paused"
+    alt="Pause icon"
+    data-src-opts="pause_circle_outline.svg;play_circle_outline.svg"
+    data-alt-opts="Pause icon;Play icon"
+    data-class-opts="paused;playing">
+
+  <audio id="audio-source" src="sb_solace.mp3" type="audio/mpeg"></audio>
+  <p id="attribution"><cite>Solace</cite> by Scott Buckley – <a href="https://www.scottbuckley.com.au/">www.scottbuckley.com.au</a></p>
+  <script type="module" src="index.js"></script>
+</body>
+</html>
